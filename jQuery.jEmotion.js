@@ -1,10 +1,12 @@
 ﻿/*
  * jQuery jEmotion
  *
- * @author: alswl
- * @update: 2011.11.04
  * @version: 0.3
- * @website: http://log4d.com
+ * @update: 2011.11.04
+ * @author: alswl
+ * @website: http://log4d.com/2011/11/jemotion
+ * @demo: http://lab.log4d.com/javascript/jEmotion/demo.html
+ * @source: https://github.com/alswl/jEmotion
  *
  * Dual licensed under the and GPL licenses:
  *   http://www.gnu.org/licenses/gpl.html
