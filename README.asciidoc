@@ -4,13 +4,17 @@ READ ME
 jQuery jEmotion
 ---------------
 
-@author: alswl
-
 @update: 2011.11.04
 
 @version: 0.1
 
-@website: http://log4d.com
+@author: alswl
+
+@website: http://log4d.com/2011/11/jemotion
+
+@demo: http://lab.log4d.com/javascript/jEmotion/demo.html
+
+@source: https://github.com/alswl/jEmotion
 
 使用GPL协议
 
