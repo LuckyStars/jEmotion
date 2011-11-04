@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>jEmotion Demo</title>
+<script type="text/javascript" src="jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="jQuery.jEmotion.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('#question').jEmotion({
+		handler: '.emotion', //表情按钮
+		imagePath: 'images/', //图片路径
+		converts: 'div'
+	});
+});
+</script>
+</head>
+<body>
+
+	<h1>jEmotion Demo</h1>
+	
+	<div>a(#偷笑)(#怒)b(#左哼哼)(#泪)c(#左哼哼)</div>
+	<textarea id="question" style="width:600px;height:180px;" placeholder="Write here"></textarea>
+	</br>
+	<a href="javascript:;" class="emotion">Add a emotion</a>
+	</br>
+	<input type="submit"/>
+
+	<hr/>
+	<a href="http://log4d.com">http://log4d.com</a>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+READ ME
+=======
+
+jQuery jEmotion
+---------------
+
+@author: alswl
+
+@update: 2011.11.04
+
+@version: 0.1
+
+@website: http://log4d.com
+
+使用GPL协议
+
+http://www.gnu.org/licenses/gpl.html
