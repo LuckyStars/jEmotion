@@ -10,7 +10,7 @@ $(function() {
 	$('#question').jEmotion({
 		handler: '.emotion', //表情按钮
 		imagePath: 'images/', //图片路径
-		converts: 'div'
+		converts: 'div' //载入页面时候这个选择器中的元素会被替换表情图片
 	});
 });
 </script>
@@ -19,7 +19,7 @@ $(function() {
 
 	<h1>jEmotion Demo</h1>
 	
-	<div>a(#偷笑)(#怒)b(#左哼哼)(#泪)c(#左哼哼)</div>
+	<div>a(#偷笑)(#怒)b(#左哼哼)(#泪)c(#左哼哼) [左边的文本将会被转换成表情]</div>
 	<textarea id="question" style="width:600px;height:180px;" placeholder="Write here"></textarea>
 	</br>
 	<a href="javascript:;" class="emotion">Add a emotion</a>
@@ -27,7 +27,16 @@ $(function() {
 	<input type="submit"/>
 
 	<hr/>
-	<a href="http://log4d.com">http://log4d.com</a>
+
+	<dl>
+		<dt>@author</dt>
+		<dd><a href="http://log4d.com">http://log4d.com</a></dd>
+		<dt>@version</dt>
+		<dd>0.3</dd>
+		<dt>@source</dt>
+		<dd><a href="https://github.com/alswl/jEmotion">https://github.com/alswl/jEmotion</a></dd>
+		<dt>@website</dt>
+		<dd><a href="http://log4d.com/2011/11/jemotion">http://log4d.com/2011/11/jemotion</a></dd>
 
 </body>
 </html>
