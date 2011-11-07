@@ -22,7 +22,8 @@ $(function() {
 	<div>a(#偷笑)(#怒)b(#左哼哼)(#泪)c(#左哼哼) [左边的文本将会被转换成表情]</div>
 	<textarea id="question" style="width:600px;height:180px;" placeholder="Write here"></textarea>
 	</br>
-	<a href="javascript:;" class="emotion">Add a emotion</a>
+	<span style="text-decoration:underline;cursor:pointer;" class="emotion">Add a emotion</span>
+	<span>（左边这个触发按钮如果使用 a 的话，会造成IE6截断http连接，不能正确读取Ajax图片，推荐使用span来模拟a）</span>
 	</br>
 	<input type="submit"/>
 
