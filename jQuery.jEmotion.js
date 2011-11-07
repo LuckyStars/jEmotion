@@ -57,11 +57,11 @@ var jEmotion = {
      * 插入html到页面
      */
 	insertHtml: function(imagePath, smilesMaps) {
-		var html = '<style>#je_emotions{width:364px; position:absolute;border:1px solid #aaa;border-top:none;z-index:9999; text-align:center;padding:3px;padding-bottom:6px;background:#fff;} #je_emotions a img{float:left;cursor:pointer;margin:1px 1px; border:#cacaca 1px solid}  #je_emotions a:hover img{border:1px solid #f51d69} </style>';
+		var html = '<style>#je_emotions{width:364px; position:absolute;border:1px solid #aaa;border-top:none;z-index:9999; text-align:center;padding:3px;padding-bottom:6px;background:#fff;} #je_emotions span img{float:left;cursor:pointer;margin:1px 1px; border:#cacaca 1px solid}  #je_emotions span:hover img{border:1px solid #f51d69} </style>';
 		html += '<div id="je_emotions">';
 		for (i in smilesMaps) {
-			html += '<a href="javascript:;">' +
-				jEmotion.code2img(i, imagePath, smilesMaps) + '</a>';
+			html += '<span>' +
+				jEmotion.code2img(i, imagePath, smilesMaps) + '</span>';
 		}
 		html += '</div>'
 		$("body").append(html);
