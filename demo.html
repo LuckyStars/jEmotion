@@ -9,17 +9,17 @@
 $(function() {
 
 	$('#question1').jEmotion({
-		input:"#question1",
-		handler: '#emo1', //表情按钮
+		input:"question1",
+		handler: 'emo1', //表情按钮
 		imagePath: 'images/', //图片路径
 		converts: '#test1' //载入页面时候这个选择器中的元素会被替换表情图片
 	});
 
-
 	$('#question2').jEmotion({
-		input:"#question2",
-		handler: '#emo2', //表情按钮
-		imagePath: 'images/'
+		input:"question2",
+		handler: 'emo2', //表情按钮
+		imagePath: 'images/',
+		converts: '#test1'
 	});
 });
 </script>
