@@ -3,14 +3,23 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <title>jEmotion Demo</title>
-<script type="text/javascript" src="jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="jQuery.jEmotion.js"></script>
 <script type="text/javascript">
 $(function() {
-	$('#question').jEmotion({
-		handler: '.emotion', //表情按钮
+
+	$('#question1').jEmotion({
+		input:"#question1",
+		handler: '#emo1', //表情按钮
 		imagePath: 'images/', //图片路径
-		converts: 'div' //载入页面时候这个选择器中的元素会被替换表情图片
+		converts: '#test1' //载入页面时候这个选择器中的元素会被替换表情图片
+	});
+
+
+	$('#question2').jEmotion({
+		input:"#question2",
+		handler: '#emo2', //表情按钮
+		imagePath: 'images/'
 	});
 });
 </script>
@@ -19,43 +28,47 @@ $(function() {
 
 	<h1>jEmotion Demo</h1>
 	
-	<div>a(#偷笑)(#怒)b(#左哼哼)(#泪)c(#左哼哼) [左边的文本将会被转换成表情]</div>
-	<textarea id="question" style="width:600px;height:180px;" placeholder="Write here"></textarea>
-	</br>
-	<span style="text-decoration:underline;cursor:pointer;" class="emotion">Add a emotion</span>
+	<div id="test1">a[偷笑][怒]b(#左哼哼)(#泪)c(#左哼哼) [左边的文本将会被转换成表情</div>
+
+
+	<textarea id="question1" style="width:600px;height:180px;" placeholder="Write here"></textarea>
+	
+
+	<span style="cursor:pointer;" id="emo1" class="emotion">
+		<img src="images/xiao.png"/>
+	</span>
+
+
 	<span>（左边这个触发按钮如果使用 a 的话，会造成IE6截断http连接，不能正确读取Ajax图片，推荐使用span来模拟a）</span>
-	</br>
-	<input type="submit"/>
+
+
+
+
 
 	<hr/>
+
+	<textarea id="question2" style="width:600px;height:180px;" placeholder="Write here"></textarea>
+	
+	
+	<span style="cursor:pointer;" id="emo2" class="emotion">
+		<img src="images/xiao.png"/>
+	</span>
 
 	<fieldset>
 		<legend>使用方法</legend>
 		<pre>
-$(function() {
-	$('#question').jEmotion({
-		handler: '.emotion', //表情按钮
-		imagePath: 'images/', //图片路径
-		converts: 'div' //载入页面时候这个选择器中的元素会被替换表情图片
-	});
-});
+			$(function() {
+				$('#question').jEmotion({
+					handler: '.emotion', //表情按钮
+					imagePath: 'images/', //图片路径
+					converts: 'div' //载入页面时候这个选择器中的元素会被替换表情图片
+				});
+			});
 		</pre>
 	</fieldset>
 
 	<hr/>
 
-	<dl>
-		<dt>@version</dt>
-		<dd>0.3</dd>
-		<dt>@author</dt>
-		<dd><a href="http://log4d.com">http://log4d.com</a></dd>
-		<dt>@website</dt>
-		<dd><a href="http://log4d.com/2011/11/jemotion">http://log4d.com/2011/11/jemotion</a></dd>
-		<dt>@demo</dt>
-		<dd><a href="http://lab.log4d.com/javascript/jEmotion/demo.html">http://lab.log4d.com/javascript/jEmotion/demo.html</a></dd>
-		<dt>@source</dt>
-		<dd><a href="https://github.com/alswl/jEmotion">https://github.com/alswl/jEmotion</a></dd>
-	</dl>
 
 </body>
 </html>

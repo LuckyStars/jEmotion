@@ -12,6 +12,8 @@
  *   http://www.gnu.org/licenses/gpl.html
  * 
  */
+
+
 var jEmotion = {
 
 	/**
@@ -96,7 +98,7 @@ var jEmotion = {
      */
 	bindEmotionClickEvent: function(input) {
 		$("#je_emotions img").live('click', (function() {
-			jEmotion.insertToCursor(input, '(#' + $(this).attr('title') +')');
+			jEmotion.insertToCursor(input, '[' + $(this).attr('title') +']');
 		}));
 	},
 
@@ -104,7 +106,7 @@ var jEmotion = {
      * 替换表情到文件名
      */
 	code2html: function(text, imagePath, smilesMaps) {
-		var match = /\(#([\u4e00-\u9fa5]*)\)/g; 
+		var match = /\[([\u4e00-\u9fa5]*)\]/g; 
 		var e;
 		while(e = match.exec(text)){
 			text = text.replace(e[0], jEmotion.code2img(e[1], imagePath, smilesMaps));
